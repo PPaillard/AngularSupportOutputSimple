@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularSupportOutputSimple';
+  title: string = '';
+
+  modifyTitle(titre:string){
+    this.title = titre;
+  }
 }
